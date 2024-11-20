@@ -1,35 +1,28 @@
 # Proyecto: Análisis de Viajes Compartidos en Zuber
 
-## Descripción General
+## Contexto
+En este proyecto, el analista trabaja para **Zuber**, una nueva empresa de viajes compartidos en Chicago. El objetivo principal es entender los patrones en los viajes a través de un análisis de los datos de los usuarios y probar la hipótesis de que las condiciones climáticas afectan la duración de los viajes, especialmente los sábados.
 
-El analista está trabajando para **Zuber**, una nueva empresa de viajes compartidos que se está lanzando en Chicago. El objetivo de este proyecto es encontrar patrones en la información disponible para comprender las preferencias de los pasajeros y el impacto de factores externos en los viajes.
+## Herramientas Utilizadas
+- **Python:** para el procesamiento de datos y pruebas estadísticas.
+- **Pandas:** para manipulación y análisis de datos.
+- **Matplotlib / Seaborn:** para la visualización de los resultados en gráficos.
+- **SciPy:** para realizar pruebas estadísticas como t-test y análisis de hipótesis.
+- **SQL (si aplica):** para consultas relacionadas con la base de datos.
 
-## Objetivo del Proyecto
+## Análisis de Resultados
+### 1. **Análisis Exploratorio**
+- Se identificaron patrones en los **tipos de viajes** y las zonas más solicitadas. La relación entre el clima y la cantidad de viajes es clara, ya que los viajes disminuyen en condiciones de clima adverso.
+- **Visualización de Barrios:** Se visualizó el número de finalizaciones de viaje por barrio, mostrando que las zonas más céntricas y turísticas tienen mayor actividad.
+- **Empresas de Taxis:** Se comparó el número de viajes entre Zuber y sus competidores para identificar la cuota de mercado y las preferencias de los pasajeros.
 
-El proyecto se centra en estudiar una base de datos y analizar los datos de los competidores, además de probar una hipótesis sobre el impacto del clima en la frecuencia de los viajes.
+### 2. **Prueba de Hipótesis**
+- Se formuló una hipótesis para comprobar si la duración de los viajes desde el Loop hasta el Aeropuerto O'Hare cambia los sábados lluviosos.
+- El análisis utilizando un **t-test** mostró que, efectivamente, los sábados lluviosos tienen un **efecto significativo** en la duración de los viajes, lo que valida la hipótesis alternativa.
 
-## Metodología
+## Conclusiones
+- **Impacto del Clima:** El clima afecta la duración de los viajes, especialmente los sábados lluviosos, lo cual es un hallazgo crucial para la empresa para optimizar las operaciones durante estos días.
+- **Preferencias de los Pasajeros:** Las zonas cercanas al Loop tienen más viajes finales, lo que indica una alta demanda en estas áreas.
+- **Recomendaciones:** Zuber podría adaptar sus estrategias de precios y promociones, tomando en cuenta el clima y las zonas con más demanda. Además, podrían mejorar la predicción de tiempos de viaje para los sábados lluviosos, ofreciendo incentivos para los pasajeros.
 
-1. **Importación de Archivos**: El analista importará los datasets necesarios para el análisis.
-2. **Estudio de Datos**: Se examinará el contenido de los datos para comprender su estructura.
-3. **Validación de Tipos de Datos**: Se asegurará de que los tipos de datos sean correctos para un análisis preciso.
-4. **Análisis de Barrios**: Se identificarán los 10 principales barrios en términos de finalización del recorrido.
-5. **Visualización de Datos**:
-   - Se crearán gráficos que muestren la relación entre empresas de taxis y el número de viajes.
-   - Se visualizarán los 10 barrios principales por número de finalizaciones de viajes.
-6. **Interpretación de Resultados**: El analista sacará conclusiones basadas en cada gráfico y explicará los resultados obtenidos.
-
-## Prueba de Hipótesis
-
-Hipótesis a probar: 
-
-"La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O'Hare cambia los sábados lluviosos".
-
-### Detalles de la Prueba
-
-- **Nivel de Significación (Alfa)**: El analista establecerá un nivel de significación apropiado para el análisis.
-- **Hipótesis Nula y Alternativa**:
-  - **Hipótesis Nula (H0)**: La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O'Hare no cambia los sábados lluviosos.
-  - **Hipótesis Alternativa (H1)**: La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O'Hare cambia los sábados lluviosos.
-  
-- **Criterio para Probar las Hipótesis**: Se explicará qué criterio se utilizó para realizar la prueba de hipótesis y por qué se eligió ese enfoque.
+Este proyecto proporciona una visión más clara de cómo el clima y las zonas geográficas impactan en la demanda y duración de los viajes compartidos, lo que permitirá a Zuber tomar decisiones más informadas para optimizar sus operaciones.
